@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1SD-h0-SF6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rov-b1-j94"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-y6-GgV">
+                                <rect key="frame" x="40" y="567" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.9734615683555603" green="0.93780779838562012" blue="0.89991044998168945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="t0N-om-mfR"/>
+                                    <constraint firstAttribute="height" constant="60" id="wMy-4z-Les"/>
+                                </constraints>
+                                <state key="normal" title="编码">
+                                    <color key="titleColor" red="0.47511029243469238" green="0.086243413388729095" blue="0.53669959306716919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdR-XV-vdi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7P-WD-iSK">
+                                <rect key="frame" x="275" y="567" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.97337347269058228" green="0.94181531667709351" blue="0.89978843927383423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5G0-4R-ez6"/>
+                                    <constraint firstAttribute="height" constant="60" id="7EK-cj-la9"/>
+                                </constraints>
+                                <state key="normal" title="解码"/>
+                                <connections>
+                                    <action selector="playClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iu6-at-F5v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p7P-WD-iSK" secondAttribute="trailing" constant="40" id="F97-Oe-BuH"/>
+                            <constraint firstItem="Rov-b1-j94" firstAttribute="top" secondItem="Ixy-y6-GgV" secondAttribute="bottom" constant="40" id="Nds-FH-z7Y"/>
+                            <constraint firstItem="Rov-b1-j94" firstAttribute="top" secondItem="p7P-WD-iSK" secondAttribute="bottom" constant="40" id="qIS-g0-sPz"/>
+                            <constraint firstItem="Ixy-y6-GgV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="z2m-0e-Zya"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="134"/>
+        </scene>
+    </scenes>
+</document>
